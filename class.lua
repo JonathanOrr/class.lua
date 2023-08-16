@@ -109,10 +109,6 @@ end
 function Class:new(...)
 	local obj = self:extend({})
 	if obj.init then obj:init(...) end
-
-	-- overload operators
-	opOverload(self, obj)
-
 	return obj
 end
 
